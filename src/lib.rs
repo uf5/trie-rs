@@ -37,7 +37,7 @@ where
                 .nodes
                 .entry(k)
                 .or_insert(Trie::new())
-                .insert(iter, value),
+                .insert_iter(iter, value),
             None => {
                 self.value = Some(value);
             }
